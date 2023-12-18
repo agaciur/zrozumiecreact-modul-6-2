@@ -32,6 +32,8 @@ export function appReducer(state, action) {
                 ...state,
                 isFormShown: true
             }
+            default:
+                throw new Error("Action not supported!");
     }
     
 }
